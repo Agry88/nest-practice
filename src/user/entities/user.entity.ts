@@ -15,13 +15,13 @@ export class User {
   password: string;
 
   @Column({
-    type: 'timestamp',
+    type: 'datetime',
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
 
   @Column({
-    type: 'timestamp',
+    type: 'datetime',
     default: () => 'CURRENT_TIMESTAMP',
     onUpdate: 'CURRENT_TIMESTAMP',
   })
